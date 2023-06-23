@@ -26,10 +26,3 @@ macro_rules! printinfo {
         eprintln!("\x1B[1;34mInfo:\x1B[0m {}", format_args!($($arg)*));
     })
 }
-
-fn main() {
-    printerr_noexit!("This is a test");
-    printwarn!("This is a test");
-    printinfo!("This is a test");
-    printerr!("This is a test");
-}
